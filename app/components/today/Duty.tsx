@@ -28,6 +28,7 @@ export default function TodayDuty({value} : {value: CardDuty}) {
             }
           },
           colors: ['#ffbc79','#4f81af'],
+          labels: ['Leave', 'On Duty'],
           legend: {
               show: false
           }

@@ -14,8 +14,6 @@ export default async function Home() {
   const todayData = JSON.parse(file1)
   const attendanceData = JSON.parse(file2)
 
-  console.log(attendanceData, 'attendanceDatad')
-
   return (
     <div className='bg-[#f0f1f2] w-full min-h-screen px-3 py-4'>
       <div className='space-y-3 md:flex md:space-x-3 md:space-y-0'>

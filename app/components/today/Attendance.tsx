@@ -28,9 +28,25 @@ export default function TodayAttendance({value} : {value: CardAttendance}) {
             }
           },
           colors: ['#4f81af','#ffbc79'],
+          labels: ['Attend', 'Un-Attend'],
           legend: {
               show: false
           }
+        },
+        annotations: {
+          points: [
+            {
+              x: 50, // Koordinat x di tengah
+              y: 50, // Koordinat y di tengah
+              label: {
+                text: "Teks di Tengah",
+                style: {
+                  fontSize: "15px",
+                  color: "#333",
+                },
+              },
+            },
+          ],
         },
         series:  [value.Attend, value.Total-value.Attend]
       })
