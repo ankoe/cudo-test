@@ -13,8 +13,8 @@ export default function PrelineScript() {
 
   useEffect(() => {
     setTimeout(() => {
-      HSDropdown.autoInit()
-      HSToggleCount.autoInit()
+      HSDropdown.autoInit();
+      HSToggleCount.autoInit();
     }, 100);
   }, [path]);
 
